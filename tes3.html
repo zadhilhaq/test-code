@@ -23,10 +23,13 @@ Hasil :
         let regex = /\d+/g
         let result = str.match(regex)
         let myString = result.toString().split('')
-        let final = myString.splice(',')
+        let angka = myString.join().replace(/,/g, '')
+        
         console.log(result)
-        console.log(myString)
-        console.log(final) 
+        console.log(myString) 
+        console.log(angka)
+        
+       
     </script>
 </body>
 </html>
