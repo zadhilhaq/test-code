@@ -19,10 +19,14 @@ Hasil :
 </head>
 <body>
     <script>
-        nilai =20
-        for(a=nilai; a>=0; a-- ){
-            console.log("*")
-        }
+        let str = '9.86-A5.321'
+        let regex = /\d+/g
+        let result = str.match(regex)
+        let myString = result.toString().split('')
+        let final = myString.splice(',')
+        console.log(result)
+        console.log(myString)
+        console.log(final) 
     </script>
 </body>
 </html>
