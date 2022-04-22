@@ -27,7 +27,17 @@ Hasil :
         
         console.log(result)
         console.log(myString) 
-        console.log(angka)
+        console.log(angka)//9865321
+        let hasil = '';
+
+        for(i=0, len = angka.length; i<len; i+=1){
+            for (let j = len; j > i; j--) {
+            hasil += angka.charAt(i);
+        }
+        hasil += '\n';
+        }
+        console.log(hasil)
+        
         
        
     </script>
