@@ -12,11 +12,9 @@ Contoh : let a = 3, let b = 7 => hasilnya a = 7, b = 3 -->
     <script>
         let a = 3
         let b = 6
-        let c
-        c = a
-        a = b
-        b = c
-        console.log("a = " +a+"b = "+ b)
+        console.log("Sebelum => a = " +a+" || "+"b = "+ b)
+        b = [a, a = b][0]
+        console.log("Sesudah => a = " +a+" || "+"b = "+ b)
     </script>
 </body>
 </html>
